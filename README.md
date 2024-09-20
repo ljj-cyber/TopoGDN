@@ -16,7 +16,6 @@ To install this project, you need to install the following Python libraries:
 pip install torch==1.13.1+cu117
 pip install torch-cluster==1.6.0+pt113cu116
 pip install torch-geometric==1.7.1
-pip install torch-persistent-homology==0.1
 pip install torch-scatter==2.1.0+pt113cu116
 pip install torch-sparse==0.6.15+pt113cu116
 pip install torch-spline-conv==1.2.1+pt113cu116
