@@ -28,6 +28,7 @@ After completing the above steps, you need to compile the `torch_persistent_homo
 
 ```bash
 python setup.py build_ext --inplace
+```
 
 ### How to Use
 
