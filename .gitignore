@@ -1,0 +1,3 @@
+__pycache__/
+data/
+torch_persistent_homology/persistent_homology_cpu.cpython-37m-x86_64-linux-gnu.so

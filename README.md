@@ -22,6 +22,13 @@ pip install torch-spline-conv==1.2.1+pt113cu116
 pip install pyg-lib==0.2.0+pt113cu116
 ```
 
+### Build the `torch_persistent_homology` Module
+
+After completing the above steps, you need to compile the `torch_persistent_homology` C++ module into a Python module. This can be done by running the following command in the project root directory:
+
+```bash
+python setup.py build_ext --inplace
+
 ### How to Use
 
 Run the main program:

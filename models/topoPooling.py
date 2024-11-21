@@ -6,7 +6,7 @@ from torch_scatter import scatter
 
 import numpy as np
 from torch_persistent_homology.persistent_homology_cpu import compute_persistence_homology_batched_mt
-import topognn.coord_transforms as coord_transforms
+import models.coord_transforms as coord_transforms
 
 class TopologyLayer(torch.nn.Module):
     """Topological Aggregation Layer."""
