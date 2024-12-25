@@ -35,12 +35,11 @@ python setup.py build_ext --inplace
 Run the main program:
 
 ```bash
-python main.py --dataset msl
+python main.py
 ```
 
 ### Dataset Information
 
-- **MSL Dataset**: The open-source part is readily available for use.
 - **SWAT and WADI Datasets**: These can be obtained from [iTrust](https://itrust.sutd.edu.sg/).
 - **SMD Dataset**: Please refer to https://github.com/17000cyh/IMDiffusion.
 
