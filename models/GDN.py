@@ -95,28 +95,6 @@ class GNNLayer(nn.Module):
             topoOut, _, _ = self.topoPooling(batch_data.x, batch_data)
             out += topoOut 
 
-        # 不能work(没改)
-        # out = out.reshape(16, 50, -1)
-        # new_edge_index = new_edge_index.reshape(2, 16, -1)
-        # dataList = []
-        # for i in range(16):
-        #     data = Data(x=out[i], edge_index=new_edge_index[:, i])
-        #     batch_data = Batch.from_data_list([data])  # 假设这里只有一个图
-        #     topoOut, _, _ = self.topoPooling(batch_data.x, batch_data)
-        #     topoList.append(topoOut)
-        # out = torch.cat(topoList, dim=0)
-
-        # 不能work
-        # out = out.reshape(16, 50, -1)
-        # new_edge_index = new_edge_index.reshape(2, 16, -1)
-        # dataList = []
-        # for i in range(16):
-        #     # 创建一个 Batch 对象
-        #     data = Data(x=out[i], edge_index=new_edge_index[:, i])
-        #     dataList.append(data)
-        # batch_data = Batch.from_data_list(data_list=dataList)
-        # out, _, _ = self.topoPooling(batch_data.x, batch_data)
-
         out = self.bn(out)
         
         return self.relu(out)
